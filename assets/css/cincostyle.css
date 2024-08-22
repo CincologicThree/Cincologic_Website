@@ -1,0 +1,17 @@
+* {
+    text-decoration: none;
+}
+.brand {
+    display: flex;
+    position: relative;
+}
+.cincologo > a > img{
+    height: 80px;
+    width: 80px;
+}
+.brand > .text {
+    font-size: 0.7em;
+    position: absolute;
+    top: 7%;
+    left: 25%;
+}

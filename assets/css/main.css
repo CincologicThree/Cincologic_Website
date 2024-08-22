@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import url(fontawesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 /*
 	Editorial by HTML5 UP
@@ -112,8 +113,16 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #f56a6a;
+  
+  
   text-decoration: none; }
+  a.service-txt{
+    color: #eff1f2;
+    margin: 0;
+  }
+  a.service-txt:hover {
+    border-bottom-color: #ffffff;
+    color: #ffffff !important; }
   a:hover {
     border-bottom-color: #f56a6a;
     color: #f56a6a !important; }
@@ -1396,7 +1405,7 @@ ul.contact {
         top: 0; }
     ul.contact li a {
       color: inherit; }
-
+      
 /* Pagination */
 ul.pagination {
   cursor: default;
@@ -1433,6 +1442,10 @@ ul.pagination {
       padding-right: 0.75em; }
     ul.pagination li:last-child {
       padding-left: 0.75em; }
+      ul.service-ul{
+        margin-top: -20px;
+        margin-left: 50px;
+      }
   @media screen and (max-width: 480px) {
     ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
       display: none; }

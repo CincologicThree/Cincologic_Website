@@ -139,7 +139,7 @@
     }
 
     #menu>ul>li>ul a {
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
 }
 @media (max-width : 1277px) {
@@ -196,6 +196,6 @@
     }
 
     #menu>ul>li>ul a {
-        font-size: 0.3em;
+        font-size: 0.9em;
     }
 }

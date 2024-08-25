@@ -4,14 +4,58 @@
     text-decoration: none;
 }
 
+.preloader {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.preloader>h1 {
+    font-family: "poppins";
+    font-size: 3em;
+    color: #b388e3;
+    animation: anim 3s linear;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .brand {
     display: flex;
     position: relative;
+    text-decoration: none;
 }
 
 .cincologo>a>img {
     height: 80px;
     width: 80px;
+    /* position: absolute; */
+    margin-left: 90px;
+    text-decoration: none;
+}
+
+.cincologo>img {
+    height: 80px;
+    width: 80px;
+    margin-left: 90px;
 }
 
 .brand>.text {
@@ -48,8 +92,13 @@
 }
 
 #banner>.image>img {
-    height: 600px;
-    width: 600px;
+    height: 650px;
+    width: 650px;
+    /* box-shadow: 8px 8px 20px black; */
+}
+
+.actions>li>a {
+    border: 2px solid#0097B2;
 }
 
 /* Responsive */
@@ -142,6 +191,7 @@
         font-size: 0.5em;
     }
 }
+
 @media (max-width : 1277px) {
     .cincologo>a>img {
         height: 60px;
@@ -197,5 +247,137 @@
 
     #menu>ul>li>ul a {
         font-size: 0.3em;
+    }
+}
+
+@media (max-width : 1024px) {
+    #banner {
+        display: flex;
+    }
+
+    #banner h1 {
+        font-size: 2.5em;
+    }
+
+    .text>.description-text {
+        font-size: 1.8em;
+    }
+
+    .icons>li>a {
+        font-size: 2em;
+    }
+}
+
+@media (max-width : 768px) {
+    #header > .logo {
+        font-size: 1em;
+    }
+
+    #banner h1 {
+        font-size: 2.5em;
+    }
+
+    .text>.description-text {
+        font-size: 1.8em;
+    }
+
+    .icons>li>a {
+        font-size: 1.8em;
+    }
+}
+@media (max-width : 412px) {
+    #header > .logo {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #banner>.image>img {
+        height: 390px;
+        width: 390px;
+        margin-left: -12px;
+    }
+
+    #banner h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        text-align: center;
+        margin-left: 12px;
+    }
+
+    .text>.description-text {
+        font-size: 1.5em;
+    }
+
+    .icons>li>a {
+        font-size: 1.5em;
+    }
+    #header .icons {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width : 360px) {
+    #banner>.image>img {
+        height: 330px;
+        width: 330px;
+        margin-left: -12px;
+    }
+    #banner h1 {
+        font-size: 1.9em;
+        margin-top: 40px;
+        text-align: center;
+        margin-left: 12px;
+    }
+    .text>.description-text {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .icons>li>a {
+        font-size: 1.2em;
+    }
+    .preloader>h1 {
+        font-family: "poppins";
+        font-size: 2.2em;
+        text-align: center;
+        color: #b388e3;
+        animation: anim 3s linear;
+    }
+}
+@media (max-width : 431px) {
+    #banner>.image>img {
+        height: 430px;
+        width: 430px;
+        margin-left: -12px;
+        /* box-shadow: 8px 8px 20px black; */
+        
+    }
+    #banner h1 {
+        font-size: 1.9em;
+        /* margin-top: 40px; */
+        text-align: center;
+        margin-left: 12px;
+    }
+    .text>.description-text {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .icons>li>a {
+        font-size: 1.5em;
+    }
+    .preloader>h1 {
+        font-family: "poppins";
+        font-size: 1.8em;
+        text-align: center;
+        color: #b388e3;
+        animation: anim 3s linear;
+    }
+    #menu ul a{
+        font-size: 1.2em;
+    }
+    #menu ul span.opener {
+        font-size: 1.2em;
+    }
+    #menu>ul>li>ul a {
+        font-size: 1.2em;
     }
 }

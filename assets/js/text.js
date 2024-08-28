@@ -20,3 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Change headers every 60 seconds
     setInterval(showNextHeader, changeInterval);
   });
+
+  let loader = document.querySelector('.preloader')
+
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(function() {
+      loader.style.display = "none"
+    }, 1500);
+  });

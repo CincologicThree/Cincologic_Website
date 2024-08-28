@@ -188,7 +188,7 @@
     }
 
     #menu>ul>li>ul a {
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
 }
 
@@ -246,8 +246,17 @@
     }
 
     #menu>ul>li>ul a {
-        font-size: 0.3em;
+        font-size: 0.9em;
     }
+}
+img.serv-img{
+    margin-top: -5px;
+    display: block;
+    text-decoration: none;
+  border-bottom: none;
+  position: relative;
+  height: 100px;
+  width: 100px;
 }
 
 @media (max-width : 1024px) {

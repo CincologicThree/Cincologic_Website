@@ -63,16 +63,29 @@ form {
     margin-bottom: 15px;
 }
 
-button {
+/* button {
     background: #ebe4e4;
-    color: #fff;
+    color: #0097B2;
+    border: 2px solid#0097B2;
     padding: 10px;
-    border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+.myBtn {
+    border: 2px solid#0097B2;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+/* .myBtn:hover {
+    background-color: #0097b277;
+    color: aliceblue;
+} */
 
 /* Responsive Styles */
 
